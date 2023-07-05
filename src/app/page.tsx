@@ -7,9 +7,9 @@ export default function Home() {
     <Container component={'main'}>
       <Typography variant="h1" component={'h2'}>Main Section</Typography>
       {
-        Array(5).fill(0).map(() => {
+        Array(5).fill(0).map((item) => {
           return (
-            <Typography variant="h1" component={'h2'}>Card</Typography>
+            <Typography key={item} variant="h1" component={'h2'}>Card</Typography>
           )
         })
       }
